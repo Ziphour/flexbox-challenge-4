@@ -2,13 +2,13 @@
 
 :root {
 
-    --font-size-small: 18px;
+    --font-size-small: 14px;
     /* For smaller text */
     --font-size-medium: 21px;
     /* For regular text */
-    --font-size-large: 36px;
+    --font-size-large: 28px;
     /* For headings */
-    --font-size-extra-large: 60px;
+    --font-size-extra-large: 40px;
     /* For large headings */
 
     --color-primary: #824936;
@@ -19,12 +19,16 @@
     /* Light beige color */
 
     /* Font families */
-    --font-subtitle: 'Roboto', sans-serif;
+    --font-subtitle: "Roboto", sans-serif;
     /* Light variant of Roboto */
-    --font-title: 'Roboto', sans-serif;
+    --font-base:"Roboto", sans-serif ;
     /* Regular variant of Roboto */
-    --font-base: 'Playfair Display', serif;
+    --font-title: "Playfair Display", serif;
     /* Black variant of Playfair Display */
+
+    --fontW--light: 300;
+    --fontW--Regular: 400;
+    --fontW--Black: 900;
 }
 
 
@@ -49,6 +53,7 @@ img {
     max-width: 80rem;
     min-width: 56rem;
     margin: auto auto;
+    border: #222C2A solid 1px;
 
 
 }
@@ -69,11 +74,13 @@ img {
     font-size: var(--font-size-extra-large);
     color: var(--color-primary);
     font-family: var(--font-title);
+    font-weight: var(--fontW--Black);
 }
 
 .intro h3 {
 
     font-size: var(--font-size-small);
+    font-weight: var(--fontW--light);
     color: var(black, white);
     font-family: var(--font-subtitle);
 
@@ -96,20 +103,23 @@ img {
 }
 
 .bodyText h2{
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     font-family: var(--font-title);
     color: var(--color-primary);
+    font-weight: var(--fontW--Black);
     text-align: center;
+
 
 }
 
 .bodyText__info {
     font-size: var(--font-size-small);
+    font-weight: var(--fontW--light);
     font-family: var(--font-subtitle);
     line-height: 1.4rem;
 
     display: flex;
-    gap: .8rem;
+    gap: 5rem;
 
 }
 
@@ -139,7 +149,8 @@ img {
 .bodyImage__text h2 {
 
     font-size: var(--font-size-medium);
-    font-family: var(--font-subtitle);
+    font-family: var(--font-title);
+    font-weight: var(--fontW--Black);
     color: var(--color-background);
     margin: .8rem 0;
 
@@ -148,6 +159,7 @@ img {
 .bodyImage__text p{
 
     font-size: var(--font-size-small);
+    font-weight: var(--fontW--light);
     font-family: var(--font-subtitle);
     color: white;
 }
