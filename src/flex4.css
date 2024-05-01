@@ -53,13 +53,15 @@ img {
 
 }
 
+
+
 /* Section 1: */
 
 .intro {
-    background-color: var(--color-background);
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    padding: 5rem 0;
 }
 
 .intro h1 {
@@ -74,6 +76,13 @@ img {
     font-size: var(--font-size-small);
     color: var(black, white);
     font-family: var(--font-subtitle);
+
+}
+
+.background--hero1{
+
+    background-color: var(--color-background);
+
 
 }
 
