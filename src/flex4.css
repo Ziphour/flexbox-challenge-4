@@ -1,0 +1,161 @@
+
+
+:root {
+
+    --font-size-small: 18px;
+    /* For smaller text */
+    --font-size-medium: 21px;
+    /* For regular text */
+    --font-size-large: 36px;
+    /* For headings */
+    --font-size-extra-large: 60px;
+    /* For large headings */
+
+    --color-primary: #824936;
+    /* Brownish color */
+    --color-secondary: #222C2A;
+    /* Dark gray color */
+    --color-background: #F3EED9;
+    /* Light beige color */
+
+    /* Font families */
+    --font-subtitle: 'Roboto', sans-serif;
+    /* Light variant of Roboto */
+    --font-title: 'Roboto', sans-serif;
+    /* Regular variant of Roboto */
+    --font-base: 'Playfair Display', serif;
+    /* Black variant of Playfair Display */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: large;
+    font-family: ;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Total: */
+
+.poster {
+
+    width: 80%;
+    margin: auto auto;
+
+
+}
+
+/* Section 1: */
+
+.intro {
+    background-color: var(--color-background);
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro h1 {
+
+    font-size: var(--font-size-extra-large);
+    color: var(--color-primary);
+    font-family: var(--font-title);
+}
+
+.intro h3 {
+
+    font-size: var(--font-size-small);
+    color: var(black, white);
+    font-family: var(--font-subtitle);
+
+}
+
+/* Section 2: */
+
+
+.bodyText{
+    padding: 3rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bodyText h2{
+    font-size: var(--font-size-medium);
+    font-family: var(--font-title);
+    color: var(--color-primary);
+    text-align: center;
+
+}
+
+.bodyText__info {
+    font-size: var(--font-size-small);
+    font-family: var(--font-subtitle);
+    line-height: 1.4rem;
+
+    display: flex;
+    gap: .8rem;
+
+}
+
+/* section 3: */
+
+.background--hero3{
+
+    background-color: #222C2A;
+
+}
+
+.bodyImage{
+    
+    width: 80%;
+    padding: 3rem 0;
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+.bodyImage__text{
+
+    display: block;
+    
+}
+
+.bodyImage__text h2 {
+
+    font-size: var(--font-size-medium);
+    font-family: var(--font-subtitle);
+    color: var(--color-background);
+    margin: .8rem 0;
+
+}
+
+.bodyImage__text p{
+
+    font-size: var(--font-size-small);
+    font-family: var(--font-subtitle);
+    color: white;
+}
+
+/* section 4: */
+
+.bodyImage--reverse{
+
+    flex-direction: row-reverse;
+}
+
+
+.background--hero4{
+
+    background-color: var(--color-primary);
+
+}
+
+
+/* Make sure all VAR is correct, make sure units are correctly used*/
+/* Make sure divs are used correctly with width spacing. Look back at older vids */
+/*  */
