@@ -46,6 +46,8 @@ img {
 .poster {
 
     width: 80%;
+    max-width: 80rem;
+    min-width: 56rem;
     margin: auto auto;
 
 
