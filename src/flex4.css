@@ -77,7 +77,16 @@ img {
     font-weight: var(--fontW--Black);
 }
 
-.intro h3 {
+.intro__subtitle{
+
+    display: flex;
+    gap: .7rem;
+    justify-content: center;
+    letter-spacing: .35rem;
+
+}
+
+.intro__subtitle h3 {
 
     font-size: var(--font-size-small);
     font-weight: var(--fontW--light);
@@ -86,6 +95,7 @@ img {
     
 
 }
+
 
 .background--hero1{
 
