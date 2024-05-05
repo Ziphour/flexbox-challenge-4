@@ -47,16 +47,6 @@ img {
 
 /* Total: */
 
-.poster {
-
-    width: 80%;
-    max-width: 80rem;
-    min-width: 56rem;
-    margin: auto auto;
-    border: #222C2A solid 1px;
-
-
-}
 
 
 
@@ -71,7 +61,7 @@ img {
 
 .intro h1 {
 
-    font-size: var(--font-size-extra-large);
+    font-size: clamp(var(--font-size-extra-large),8vh,5rem);
     color: var(--color-primary);
     font-family: var(--font-title);
     font-weight: var(--fontW--Black);
@@ -113,26 +103,22 @@ img {
     margin: 0 auto;
 }
 
-.bodyText h2{
+.subtitle{
     font-size: var(--font-size-large);
     font-family: var(--font-title);
-    color: var(--color-primary);
     font-weight: var(--fontW--Black);
-    text-align: center;
-    margin-bottom: 2rem 
-
-
 }
 
-.bodyText__info {
+.subtitle--dark{
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.container--bodytext {
     font-size: var(--font-size-small);
     font-weight: var(--fontW--light);
     font-family: var(--font-subtitle);
     line-height: 1.4rem;
-
-    display: flex;
-    gap: 5rem;
-
 }
 
 /* section 3: */
@@ -143,7 +129,7 @@ img {
 
 }
 
-.bodyImage{
+.container{
     
     width: 80%;
     padding: 4rem 0;
@@ -152,13 +138,13 @@ img {
     margin: 0 auto;
 }
 
-.bodyImage img{
+.container img{
 
     width: 20rem;
     border: transparent solid 1px;
 }
 
-.bodyImage__text h2 {
+.container__text h2 {
 
     font-size: var(--font-size-medium);
     font-family: var(--font-title);
@@ -168,7 +154,7 @@ img {
 
 }
 
-.bodyImage__text p{
+.container__text p{
 
     font-size: var(--font-size-small);
     font-weight: var(--fontW--light);
@@ -178,7 +164,7 @@ img {
 
 /* section 4: */
 
-.bodyImage--reverse{
+.container--reverse{
 
     flex-direction: row-reverse;
 }
@@ -194,3 +180,17 @@ img {
 /* Make sure all VAR is correct, make sure units are correctly used*/
 /* Make sure divs are used correctly with width spacing. Look back at older vids */
 /*  */
+
+@media (max-width:800px) {
+
+    .container{
+        display: block;
+    }
+    .container > *{
+        width:100%;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+
+    }
+}
